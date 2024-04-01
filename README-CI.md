@@ -57,7 +57,76 @@ To make sure the project is running, you are able to access the app using the we
 
 ## Part 2 - GitHub Actions and DockerHub
 
+### How to Create a Public Repo in DockerHub
+
+1. Go to Docker Desktop (online or in the application) and sign in or create an account
+2. Click *Create a Repository*
+3. Give the Repo a Name! (It already has the namespace as your username!)
+4. Give a short description of what this repo is for!
+5. For this project, we are using a **Public** Repo
+6. Click *Create*
+
+### How to Authenticate
+
+1. After opening your terminal, and connecting to the AWS Instance, type in `docker login`
+2. it will then prompt you to enter your **username** and **password**
+3. you will then be told **Login Succeeded**
+
+### Push Container Image to DockerHub (Without GitHub Actions)
+
+1. Make sure you are logged in to dockerhub on terminal instance
+2. run `docker images` to see which one you would like to mess with
+3. ***OPTIONAL*** Rename the image you would liked to use, I did if for simplicity, using the command `docker tag <image_id> <dockerhub_username>/<repository_name>:<tag>`
+    - so for me, it was `docker tag 64987e5de400 kkoppin001 docker-repo-koppin:latest`
+4. then `docker push kkoppin001/docker-repo-koppin:latest` to push the image to the repo
+### Link to Public Docker Repo
+
+`https://hub.docker.com/repository/docker/kkoppin001/docker-repo-koppin/general`
+
+
+### What is a GitHub Secret?
+
+A GitHub secret is a secure environment variable that you can store in your GitHub repository settings. It is encrypted and only accessible to authorized users with appropriate permissions, such as repository administrators.
+
+### How to Set GitHub Secrets
+
+1. Go to current GitHub Repository
+2. Click on the **Settings** tab
+3. In the side bar, click **Secrets and Variables**
+4. Click **Actions**
+5. Click **New Repository Secret**
+6. Give it a name and put in your secret!
+7. Click **Add Secret**
+8. Then you can use them in your workflows!
+
+### What Secrets are Used for this Specifically?
+
+You are using repository secrets!
+
+1. Docker Username
+2. Docker Password
+
+### What does a GitHub Workflow do and when?
+
+**WHAT:** A GitHub Workflow is defined in a YAML file and is stored in the .github/workflows directory of your repository. This YAML file defines the jobs, steps, triggers, and other configurations for the workflow.
+
+**WHEN:** A GitHub workflow starts when a specified event or trigger occurs like a push action within the GitHub repository.
+
+### What Variables in Workflow are Custom to this Project?
+
+- Trigger Events
+- Jobs
+- Steos
+- Workflow Inputs
+- Workflow Outputs
+- Secrets
+
+
 ## Part 3 - Diagramming
+
+### Image & Container Diagram
+
+### 
 
 ## Resources Used
 
