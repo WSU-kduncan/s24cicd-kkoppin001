@@ -126,7 +126,17 @@ You are using repository secrets!
 
 ### Image & Container Diagram
 
-### 
+![IMG_0401](https://github.com/WSU-kduncan/s24cicd-kkoppin001/assets/116985839/ace1897a-1385-4957-a334-db742f2bb0e4)
+
+### Connecting Docker Repo to GitHub Repo Diagram
+
+![IMG_0403](https://github.com/WSU-kduncan/s24cicd-kkoppin001/assets/116985839/943e6695-2130-40d2-b771-b68ecad25b91)
+
+
+### Creating A Workflow Diagram
+
+![IMG_0402](https://github.com/WSU-kduncan/s24cicd-kkoppin001/assets/116985839/df214dbe-2377-4f69-adf9-8e090bfecee6)
+
 
 ## Resources Used
 
