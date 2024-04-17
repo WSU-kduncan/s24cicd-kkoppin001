@@ -1,37 +1,27 @@
-name: my-first-flow
-
+name: project5
 on:
   push:
-    tags:
-      - '*'
+    branches: main
 
 jobs:
-  versioning:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v2
-
-      - name: Extract Git tag version
-        id: extract_tag_version
-        uses: docker/metadata-action@v3
         with:
-          images: my_image
-
-      - name: Log in to DockerHub
-        uses: docker/login-action@v1
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          runs-on: ubuntu-latest
 
       - name: Build Docker Image
         run: docker build -t my_image .
 
+      - name: Log in to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.KOPPIN_SECRET }}
+          password: ${{ secrets.KOPPIN_SECRET }}
+
       - name: Push Docker Image to DockerHub
-        run: |
-          docker push my_image
-          for tag in latest ${GITHUB_REF#refs/tags/v} ${GITHUB_REF#refs/tags/v*}; do
-            docker tag my_image:latest my_image:$tag
-            docker push my_image:$tag
-          done
+        run: docker push my_image
 
