@@ -13,7 +13,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          cd s24cicd-kkoppin001/myapp 
+          cd myapp 
           docker build --progress plain -t myapp:v1 . # Tag the Docker image with version "v1"
 
       - name: Log in to DockerHub
