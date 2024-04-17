@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker Image to DockerHub
-        run: docker push myapp:v1 # Push the Docker image with version "v1" tag
+        run: docker push kkoppin001/myapp:v1 # Push the Docker image with version "v1" tag
 
 
 
