@@ -1,0 +1,7 @@
+[
+  {
+    "id": "pedantic_volhard",
+    "execute-command": "/home/ubuntu/s24cicd-kkoppin001/deploy.sh",
+    "command-working-directory": "/var/webhook"
+  }
+]
