@@ -89,7 +89,7 @@ It should be in the same repository as the CI/CD pipeline projects
 
 ## Diagramming
 
-<img width="1512" alt="Screenshot 2024-04-19 at 3 32 41 PM" src="https://github.com/WSU-kduncan/s24cicd-kkoppin001/assets/116985839/b2be524b-9f1d-433f-8fb6-4bad32c5a5e7">
+![IMG_0404](https://github.com/WSU-kduncan/s24cicd-kkoppin001/assets/116985839/72786ae5-8efb-435e-bd93-aafb1491f3c4)
 
 
 ## Resources
