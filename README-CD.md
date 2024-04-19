@@ -89,6 +89,9 @@ It should be in the same repository as the CI/CD pipeline projects
 
 ## Diagramming
 
+<img width="1512" alt="Screenshot 2024-04-19 at 3 32 41 PM" src="https://github.com/WSU-kduncan/s24cicd-kkoppin001/assets/116985839/b2be524b-9f1d-433f-8fb6-4bad32c5a5e7">
+
+
 ## Resources
 - [Effortless CI/CD](https://www.youtube.com/watch?v=OjRevvZvWX4&t=608s)
 - [GitHub Actions Tutorial](https://www.youtube.com/watch?v=R8_veQiYBjI)
