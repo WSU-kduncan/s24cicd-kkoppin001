@@ -90,10 +90,10 @@ It should be in the same repository as the CI/CD pipeline projects
 ## Diagramming
 
 ## Resources
-[Effortless CI/CD](https://www.youtube.com/watch?v=OjRevvZvWX4&t=608s)
-[GitHub Actions Tutorial](https://www.youtube.com/watch?v=R8_veQiYBjI)
-[Build CI/CD Pipeline](https://www.youtube.com/watch?v=euEkYEFCrI8&t=410s)
-[Continuous Deployment](https://levelup.gitconnected.com/automated-deployment-using-docker-github-actions-and-webhooks-54018fc12e32)
+- [Effortless CI/CD](https://www.youtube.com/watch?v=OjRevvZvWX4&t=608s)
+- [GitHub Actions Tutorial](https://www.youtube.com/watch?v=R8_veQiYBjI)
+- [Build CI/CD Pipeline](https://www.youtube.com/watch?v=euEkYEFCrI8&t=410s)
+- [Continuous Deployment](https://levelup.gitconnected.com/automated-deployment-using-docker-github-actions-and-webhooks-54018fc12e32)
 
 
 
