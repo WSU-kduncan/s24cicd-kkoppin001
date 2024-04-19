@@ -21,4 +21,5 @@ jobs:
       run: |
         cd application
         docker build -t docker-repo-koppin:v1 .
+        docker tag docker-repo-koppin:v1 kkoppin001/v1
         docker push kkoppin001/v1
