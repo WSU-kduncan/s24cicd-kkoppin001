@@ -20,6 +20,7 @@ jobs:
     - name: Build and push image
       run: |
         cd application
+      docker pull kkoppin001/docker-repo-koppin:v1
         docker build -t docker-repo-koppin:v1 .
         docker tag docker-repo-koppin:v1 kkoppin001/v1
         docker push kkoppin001/v1
